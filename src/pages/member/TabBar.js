@@ -2,6 +2,7 @@ import React from 'react'
 import { TabBar,NavBar, Icon  } from 'antd-mobile';
 // 引入组件页面
 import Member from './index'
+import Msg from './../Home/msg'
 // import Category from './../../../component/category'
 // // import Cart from './../../../component/cart'
 // import User from './../../../component/user'
@@ -27,7 +28,7 @@ class tabBar extends React.Component {
         );
         return (
             <div>
-                <NavBar
+                {/* <NavBar
                     mode="light"
                     icon={<Icon type="left" />}
                     onLeftClick={() => console.log('onLeftClick')}
@@ -35,7 +36,7 @@ class tabBar extends React.Component {
                         <Icon key="0" type="search" style={{ marginRight: '16px' }} />,
                         <Icon key="1" type="ellipsis" />,
                     ]}
-                >会员</NavBar>
+                >会员</NavBar> */}
 
                 <div style={{ position: 'fixed', height: '100%', width: '100%', top: 0 }}>
                 <TabBar
@@ -72,7 +73,7 @@ class tabBar extends React.Component {
                 }}
                 >
                 {/*// 将 home 组件作为实参传递*/}
-                {/*{this.renderContent(<Home />)}*/}
+                {this.renderContent(<Msg />)}
 
                 </TabBar.Item>
                 {/* 分类 */}
