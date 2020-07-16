@@ -1,7 +1,7 @@
 import React from 'react'
 import { TabBar,NavBar, Icon  } from 'antd-mobile';
 // 引入组件页面
-import Home from './index'
+import Member from './index'
 // import Category from './../../../component/category'
 // // import Cart from './../../../component/cart'
 // import User from './../../../component/user'
@@ -72,7 +72,7 @@ class tabBar extends React.Component {
                 }}
                 >
                 {/*// 将 home 组件作为实参传递*/}
-                {this.renderContent(<Home />)}
+                {/*{this.renderContent(<Home />)}*/}
 
                 </TabBar.Item>
                 {/* 分类 */}
@@ -94,7 +94,7 @@ class tabBar extends React.Component {
                     />
                 }
                 title="会员"
-                key=""
+                key="member"
                 selected={this.state.selectedTab === 'redTab'}
                 onPress={() => {
                     this.setState({
@@ -102,7 +102,7 @@ class tabBar extends React.Component {
                     });
                 }}
                 >
-                {/*{this.renderContent(<Category />)}*/}
+                {this.renderContent(<Member />)}
                 </TabBar.Item>
 
 
