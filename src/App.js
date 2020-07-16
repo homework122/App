@@ -1,10 +1,13 @@
 import React from 'react';
 import './App.css';
-import Test from './pages/test'
+import 'antd-mobile/dist/antd-mobile.css';
+// import Test from './pages/test'
+import Huiyuan from './pages/member/TabBar'
 function App() {
   return (
     <div className="App">
-    <Test></Test>
+    {/*<Test></Test>*/}
+        <Huiyuan></Huiyuan>
     </div>
   );
 }
