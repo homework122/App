@@ -3,8 +3,7 @@ import { TabBar,NavBar, Icon  } from 'antd-mobile';
 import {BrowserRouter as Router,Route, Link, withRouter,Switch} from 'react-router-dom'
 // import {BrowserRouter as Router, Route, Redirect,Link, ,withRouter,HashRouter} from 'react-router-dom'
 // 引入组件页面
-import Index from './Index'
-
+import Member from './index'
 // import Category from './../../../component/category'
 // // import Cart from './../../../component/cart'
 // import User from './../../../component/user'
